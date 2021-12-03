@@ -123,7 +123,7 @@ $(document).on("click", "#btnenviar", function(){
     var tickd_descrip = $('#tickd_descrip').val();
 
     if($('#tickd_descrip').summernote('isEmpty')){
-        swal("¡Advertencia!", "Falta Descripción", "warning");
+        swal("Advetencia!", "Falta Descripción", "warning");
     }else{
         $.post("../../controller/ticket.php?op=insertdetalle", { tick_id: tick_id, usu_id:usu_id, tickd_descrip:tickd_descrip}, function(data){
             listardetalle(tick_id);
@@ -138,7 +138,7 @@ $(document).on("click", "#btnenviar", function(){
 $(document).on("click", "#btncerrarticket", function(){
     swal({
         title: "HelpDesk",
-        text: "¿Está seguro de cerrar el ticket?",
+        text: "Está seguro de cerrar el ticket?",
         type: "warning",
         showCancelButton: true,
         confirmButtonClass: "btn-warning",

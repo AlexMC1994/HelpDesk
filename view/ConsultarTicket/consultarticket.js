@@ -125,7 +125,7 @@ $(document).ready(function(){
     });
 
     function ver(ticket_id) {
-        window.open('http://localhost:80/HelpDesk/view/DetalleTicket/?ID='+ ticket_id +'');
+        window.open('http://localhost:8080/HelpDesk/view/DetalleTicket/?ID='+ ticket_id +'');
     }
 
     function asignar(ticket_id) {
@@ -154,7 +154,7 @@ $(document).ready(function(){
                 $.post("../../controller/email.php?op=ticket_asignado", {ticket_id : tick_id}, function (data) {
 
                 });
-                swal("Correcto!", "Asignado Correctamente", "success");
+                swal("Correcto!", "Asginado Correctamente", "success");
                 $("#modalasignar").modal('hide');
                 $('#ticket_data').DataTable().ajax.reload();
             }
