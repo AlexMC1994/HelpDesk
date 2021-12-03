@@ -2,8 +2,10 @@
     <div class="container-fluid">
 
         <a href="#" class="site-logo">
-            <img class="hidden-md-down" src="../../public/img/logo-2.png" alt="">
-            <img class="hidden-lg-up" src="../../public/img/logo-2-mob.png" alt="">
+            <!-- MODIFICAR LOS LOGOS-->
+            <img class="hidden-md-down" src="../../public/img/itforyou.jpeg" alt="">  
+            <img class="hidden-lg-up" src="../../public/img/diseño.png" alt="">
+            <!-- LOOOOOOOS LOGOS OYEEEEEE-->
         </a>
 
         <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">

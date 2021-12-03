@@ -54,7 +54,7 @@
 								<span aria-hidden="true">×</span>
 							</button>
 							<i class="font-icon font-icon-warning"></i>
-							El usuario y/o Contraseña son incorrectos.
+							El usuario y/o contraseña son incorrectos.
 						</div>
                         <?php
                             break;
@@ -84,7 +84,6 @@
                         <div class="checkbox float-left">
                             <input type="checkbox" id="signed-in"/>
                         </div>
-
                         <div class="row d-flex justify-content-center text-center reset">
                             <a href="#" id="btnsoporte">Acceso Soporte</a>
                         </div>

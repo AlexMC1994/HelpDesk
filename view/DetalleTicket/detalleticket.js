@@ -157,7 +157,7 @@ $(document).on("click", "#btncerrarticket", function(){
             $.post("../../controller/email.php?op=ticket_cerrado", {ticket_id : tick_id}, function (data) {
 
             });
-
+            
             listardetalle(tick_id);
             swal({
                 title: "HelpDesk!",

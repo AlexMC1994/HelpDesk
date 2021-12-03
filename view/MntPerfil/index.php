@@ -1,5 +1,4 @@
 <?php
-
 require_once("../../config/conexion.php");
 if (isset($_SESSION["usu_id"])) {
 
