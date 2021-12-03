@@ -37,7 +37,7 @@ function guardaryeditar(e){
     e.preventDefault();
     var formData = new FormData($("#ticket_form")[0]);
     if($('#tick_descrip').summernote('isEmpty') || $('#tick_titulo').val() == ''){
-        swal("Advetencia!", "Campos Vacíos", "warning");
+        swal("Advertencia!", "Campos Vacíos", "warning");
     }else{
 
         var totalfiles = $('#fileElem').val().length;

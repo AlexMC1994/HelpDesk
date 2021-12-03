@@ -26,7 +26,7 @@
                         <input type="email" class="form-control" id="usu_correo" name="usu_correo" placeholder="test@test.com" required>
                     </div>
 
-                    <div class="form-group">
+                 <div class="form-group">
                         <label class="form-label" for="usu_pass">Contraseña</label>
                         <input type="text" class="form-control" minlength="8" maxlength="16" id="usu_pass" name="usu_pass" placeholder="************" required>
                     </div>

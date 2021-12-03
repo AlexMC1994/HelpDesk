@@ -125,7 +125,8 @@ $(document).ready(function(){
     });
 
     function ver(ticket_id) {
-        window.open('http://localhost:8080/HelpDesk/view/DetalleTicket/?ID='+ ticket_id +'');
+        window.open('http://localhost:80/HelpDesk/view/DetalleTicket/?ID='+ ticket_id +'');
+       // windows.open('http://localhost:80/HelpDesk/view/DetalleTicket/?ID=' + ticket_id +'');
     }
 
     function asignar(ticket_id) {

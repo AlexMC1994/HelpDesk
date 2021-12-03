@@ -123,7 +123,7 @@ $(document).on("click", "#btnenviar", function(){
     var tickd_descrip = $('#tickd_descrip').val();
 
     if($('#tickd_descrip').summernote('isEmpty')){
-        swal("Advetencia!", "Falta Descripción", "warning");
+        swal("Advertencia!", "Falta Descripción", "warning");
     }else{
         $.post("../../controller/ticket.php?op=insertdetalle", { tick_id: tick_id, usu_id:usu_id, tickd_descrip:tickd_descrip}, function(data){
             listardetalle(tick_id);
