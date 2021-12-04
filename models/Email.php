@@ -10,8 +10,8 @@
 
     class Email extends PHPMailer{
 
-        protected $gCorreo = ''; //variable que contiene el correo destinatario
-        protected $gContrasena = ''; //varibale que tiene la contraseña distanatario
+        protected $gCorreo = 'alexmorecrisping@gmail.com'; //variable que contiene el correo destinatario
+        protected $gContrasena = 'alexmorecrisping'; //varibale que tiene la contraseña distanatario
 
         public function ticket_abierto($ticket_id){
             $ticket = new Ticket();

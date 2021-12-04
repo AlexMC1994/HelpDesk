@@ -52,6 +52,7 @@
 							<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Asignación</th>
 							<th class="d-none d-sm-table-cell" style="width: 10%;">Soporte</th>
 							<th class="text-center" style="width: 5%;"></th>
+							<!--<th class="d-none d-sm-table-cell" style="width: 10%;">Valoracion</th> -->
 						</tr>
 					</thead>
 					<tbody>

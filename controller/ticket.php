@@ -38,7 +38,7 @@
 
                             move_uploaded_file($doc1, $destino);
                         }
-                    }
+                    } 
                 }
             }
             echo json_encode($datos);
@@ -47,6 +47,11 @@
         case "update":
             $ticket->update_ticket($_POST["tick_id"]);
             $ticket->insert_ticketdetalle_cerrar($_POST["tick_id"], $_POST["usu_id"]);
+        break;
+
+        case "reabrir":
+            $ticket->reabrir_ticket($_POST["tick_id"]);
+            $ticket->insert_ticketdetalle_reabrir($_POST["tick_id"], $_POST["usu_id"]);
         break;
 
         case "asignar":
@@ -66,7 +71,7 @@
                 if($row["tick_estado"] == "Abierto"){
                     $sub_array[] = '<span class="label label-pill label-success">Abierto</span>';
                 }else{
-                    $sub_array[] = '<span class="label label-pill label-danger">Cerrado</span>';
+                    $sub_array[] = '<a onClick="CambiarEstado('.$row["ticket_id"].')"><span class="label label-pill label-danger">Cerrado</span></a>';
                 }
                 
                 $sub_array[] = date("d/m/Y H:i:s", strtotime($row["fech_crea"]));
@@ -89,7 +94,6 @@
                         $sub_array[] = '<span class="label label-pill label-success">'.$row1["usu_nom"].' '.$row1["usu_ape"].'</span>';
                     }
                 }
-
 
                 $sub_array[] = '<button type="button" onClick="ver('.$row["ticket_id"].');"  id="'.$row["ticket_id"].'" class="btn btn-inline primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
                 $data[] = $sub_array;
@@ -116,7 +120,7 @@
                 if($row["tick_estado"] == "Abierto"){
                     $sub_array[] = '<span class="label label-pill label-success">Abierto</span>';
                 }else{
-                    $sub_array[] = '<span class="label label-pill label-danger">Cerrado</span>';
+                    $sub_array[] = '<a onClick="CambiarEstado('.$row["ticket_id"].')"><span class="label label-pill label-danger">Cerrado</span></a>';
                 }
 
                 $sub_array[] = date("d/m/Y H:i:s", strtotime($row["fech_crea"]));
@@ -138,7 +142,7 @@
                         $sub_array[] = '<span class="label label-pill label-success">'.$row1["usu_nom"].' '.$row1["usu_ape"].'</span>';
                     }
                 }
-                
+
                 $sub_array[] = '<button type="button" onClick="ver('.$row["ticket_id"].');"  id="'.$row["ticket_id"].'" class="btn btn-inline primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
                 $data[] = $sub_array;
             }

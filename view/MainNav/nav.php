@@ -24,6 +24,12 @@ if($_SESSION["rol_id"] == 1){
                 <span class="lbl">Consultar Ticket</span>
             </a>
         </li>
+        <li class="blue-dirty">
+            <a href="..\ForoRespuestas\">
+                <span class="glyphicon glyphicon-bullhorn"></span>
+                <span class="lbl">Foro de Respuestas</span>
+            </a>
+        </li>
     </ul>
 </nav>
 
