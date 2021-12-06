@@ -120,7 +120,7 @@ if (isset($_SESSION["usu_id"])) {
 						<div class="col-md-6">
 							<article class="faq-page-quest">
 								<header class="faq-page-quest-title">
-									<a href="#">Mi computadora no prende, ¿cuál seria el problema?</a>
+									<a href="">Mi computadora no prende, ¿cuál seria el problema?</a>
 								</header>
 								<p>Debe revisar si su conexion de corriente electrica esta en optimas condiciones, de lo contrarioel equipo presentará fallas.
 								   Otra opción a evaluar sería algún tipo de problema con el disco duro, ante ello contamos con un equipo especializado.</p>
